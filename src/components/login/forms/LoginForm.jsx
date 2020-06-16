@@ -8,8 +8,8 @@ function LoginForm(props){
             <h4>Login Page</h4>
             <Form>
                 <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" name="email" value={props.data.email} placeholder="Enter email" />
+                    <Form.Label>Username</Form.Label>
+                    <Form.Control type="email" name="email" value={props.data.email} placeholder="username or email" />
                     <Form.Text className="text-muted" name="email" value={props.data.email} >
                     We'll never share your email with anyone else.
                     </Form.Text>
@@ -24,7 +24,7 @@ function LoginForm(props){
                 </Form.Group>
                 <Button variant="primary" type="submit">
                     Login
-                </Button>
+                </Button>{'  '}<Button variant="primary" type="submit">REGISTER HERE</Button>
             </Form>
         </div>
     )
